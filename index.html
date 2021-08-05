@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+      integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+    <div class="content">
+      <div class="items-box ui grid"></div>
+      <div class="create-item-box ui grid centered">
+        <div class="eight column centered form-item">
+          <div class="ui input">
+            <input id="name" type="text" placeholder="Tên Sản Phẩm" />
+          </div>
+          <div class="ui input">
+            <input class="description" type="text" placeholder="Mô Tả" />
+          </div>
+          <div class="ui input">
+            <input id="views" type="number" placeholder="Lượt Xem" />
+          </div>
+          <div class="ui input">
+            <input id="imageAddress" type="text" placeholder="Địa Chỉ Hình Ảnh" />
+          </div>
+          <button onclick="addItem()" id="add-item" class="ui primary button">Lưu Sản Phẩm</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./addItems.js"></script>
+  </body>
+</html>
